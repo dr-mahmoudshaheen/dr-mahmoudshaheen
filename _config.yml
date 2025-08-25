@@ -1,0 +1,78 @@
+# GitHub Pages Configuration
+title: "Immigration & Citizenship Attorney | محامي الهجرة والجنسية"
+description: "Professional legal services for immigration and citizenship in Germany and EU | خدمات قانونية متخصصة في الهجرة والجنسية"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# SEO settings
+url: "https://yourusername.github.io"
+baseurl: "/lawyer-website"
+
+# Language settings
+lang: ar
+locale: ar_EG
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+
+# Include files that start with dot
+include:
+  - .htaccess
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:name/
+  testimonials:
+    output: false
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      lang: "ar"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+# Social media
+social:
+  name: "Immigration & Citizenship Attorney"
+  links:
+    - "https://www.linkedin.com/company/immigration-lawyer"
+    - "https://www.facebook.com/immigration.lawyer"
+
+# Contact information
+contact:
+  phone: "+49 30 1234 5678"
+  email: "info@immigration-lawyer.de"
+  address: "Lawyers Street 123, 10115 Berlin, Germany"
+
+# Analytics
+google_analytics: "G-XXXXXXXXXX"
+
+# Additional settings
+timezone: Europe/Berlin
+encoding: utf-8

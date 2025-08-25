@@ -1,0 +1,359 @@
+/* RTL (Right-to-Left) Styles for Arabic */
+
+/* Base RTL Styles */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] body {
+    font-family: var(--font-family-ar);
+}
+
+/* Navigation RTL */
+[dir="rtl"] .nav-brand {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-list {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-link::after {
+    right: 0;
+    left: auto;
+}
+
+/* Hero Section RTL */
+[dir="rtl"] .hero-content {
+    direction: rtl;
+}
+
+@media (min-width: 768px) {
+    [dir="rtl"] .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    [dir="rtl"] .hero-text {
+        order: 1;
+    }
+    
+    [dir="rtl"] .hero-image {
+        order: 2;
+    }
+}
+
+[dir="rtl"] .hero-actions {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 639px) {
+    [dir="rtl"] .hero-actions {
+        flex-direction: column;
+    }
+}
+
+[dir="rtl"] .trust-badges {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 639px) {
+    [dir="rtl"] .trust-badges {
+        flex-direction: column;
+    }
+}
+
+[dir="rtl"] .badge {
+    flex-direction: row-reverse;
+}
+
+/* Services Section RTL */
+[dir="rtl"] .service-features li {
+    padding-right: var(--spacing-lg);
+    padding-left: 0;
+}
+
+[dir="rtl"] .service-features li::before {
+    right: 0;
+    left: auto;
+}
+
+/* About Section RTL */
+@media (min-width: 768px) {
+    [dir="rtl"] .about-content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    [dir="rtl"] .about-text {
+        order: 1;
+    }
+    
+    [dir="rtl"] .about-image {
+        order: 2;
+    }
+}
+
+[dir="rtl"] .credential {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .about-features li {
+    flex-direction: row-reverse;
+}
+
+/* Testimonials RTL */
+[dir="rtl"] .testimonial-author {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .author-info {
+    text-align: right;
+}
+
+/* FAQ RTL */
+[dir="rtl"] .faq-question {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+/* Contact Section RTL */
+[dir="rtl"] .contact-item {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .social-icons {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .form-actions {
+    flex-direction: row-reverse;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-brand {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-contact p {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-social {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom-content {
+    text-align: center;
+}
+
+/* WhatsApp Float RTL */
+[dir="rtl"] .whatsapp-float {
+    left: var(--spacing-xl);
+    right: auto;
+}
+
+[dir="rtl"] .whatsapp-btn {
+    flex-direction: row-reverse;
+}
+
+/* Mobile Menu RTL */
+@media (max-width: 1023px) {
+    [dir="rtl"] .nav-menu {
+        right: -100%;
+        left: auto;
+    }
+    
+    [dir="rtl"] .nav-menu.active {
+        right: 0;
+        left: auto;
+    }
+    
+    [dir="rtl"] .nav-list {
+        text-align: right;
+    }
+}
+
+/* Form Elements RTL */
+[dir="rtl"] .form-group input,
+[dir="rtl"] .form-group select,
+[dir="rtl"] .form-group textarea {
+    text-align: right;
+}
+
+[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+/* Typography RTL */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    text-align: right;
+}
+
+[dir="rtl"] p {
+    text-align: right;
+}
+
+/* List Items RTL */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+    padding-right: var(--spacing-lg);
+    padding-left: 0;
+}
+
+/* Arabic Number Direction */
+[dir="rtl"] .stat-number,
+[dir="rtl"] .testimonial-rating,
+[dir="rtl"] .footer-contact [dir="ltr"] {
+    direction: ltr;
+    text-align: center;
+}
+
+/* Phone numbers should remain LTR */
+[dir="rtl"] [dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+}
+
+/* Specific Arabic Font Weights */
+[dir="rtl"] .hero-title {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+}
+
+[dir="rtl"] .section-title {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.01em;
+}
+
+[dir="rtl"] .nav-link {
+    font-weight: var(--font-weight-medium);
+}
+
+/* Arabic Text Spacing */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+    letter-spacing: -0.01em;
+}
+
+[dir="rtl"] .btn {
+    letter-spacing: 0;
+}
+
+/* Fix for Arabic punctuation */
+[dir="rtl"] .hero-subtitle,
+[dir="rtl"] .section-subtitle,
+[dir="rtl"] .about-description {
+    line-height: 1.8;
+}
+
+/* Arabic-specific animations */
+@media (prefers-reduced-motion: no-preference) {
+    [dir="rtl"] .service-card:hover {
+        transform: translateY(-8px) scale(1.02);
+    }
+    
+    [dir="rtl"] .testimonial-card:hover {
+        transform: translateY(-4px);
+    }
+}
+
+/* Better Arabic readability */
+[dir="rtl"] .testimonial-content p {
+    line-height: 1.9;
+    font-size: var(--font-size-lg);
+}
+
+[dir="rtl"] .faq-answer p {
+    line-height: 1.8;
+}
+
+/* Arabic number formatting */
+[dir="rtl"] .hero-stats {
+    direction: ltr;
+}
+
+[dir="rtl"] .stat {
+    direction: rtl;
+}
+
+[dir="rtl"] .stat-number {
+    direction: ltr;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ensure proper RTL flow for grid layouts */
+[dir="rtl"] .services-grid,
+[dir="rtl"] .testimonials-grid {
+    direction: rtl;
+}
+
+[dir="rtl"] .service-card,
+[dir="rtl"] .testimonial-card {
+    direction: rtl;
+    text-align: right;
+}
+
+/* RTL-specific responsive adjustments */
+@media (max-width: 768px) {
+    [dir="rtl"] .hero-actions {
+        align-items: stretch;
+    }
+    
+    [dir="rtl"] .trust-badges {
+        align-items: flex-end;
+    }
+    
+    [dir="rtl"] .contact-content {
+        direction: rtl;
+    }
+}
+
+/* Arabic font loading optimization */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-display: swap;
+    src: local('Noto Sans Arabic');
+}
+
+/* Better Arabic text rendering */
+[dir="rtl"] {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* RTL scrollbar (for webkit browsers) */
+[dir="rtl"] ::-webkit-scrollbar {
+    width: 8px;
+}
+
+[dir="rtl"] ::-webkit-scrollbar-track {
+    background: var(--background-light);
+}
+
+[dir="rtl"] ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+[dir="rtl"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
