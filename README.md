@@ -1,8 +1,8 @@
-# محامي الهجرة والجنسية | Immigration & Citizenship Attorney
+# اللواء الدكتور محمود شاهين | Colonel Dr. Mahmoud Shaheen
 
-موقع ويب احترافي لمحامي الهجرة والجنسية متخصص في ألمانيا والاتحاد الأوروبي.
+موقع ويب احترافي للمحامي المصري اللواء الدكتور محمود شاهين المتخصص في القانون الجنائي والإداري والتجاري.
 
-A professional website for an immigration and citizenship attorney specialized in Germany and the European Union.
+A professional website for Egyptian lawyer Colonel Dr. Mahmoud Shaheen specialized in criminal, administrative, and commercial law.
 
 ## 🌟 الميزات | Features
 
