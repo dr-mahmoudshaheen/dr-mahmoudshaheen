@@ -797,13 +797,32 @@ a:hover {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .faq-answer p {
     margin: 0;
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+/* Author Photo Styling */
+.author-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    background: white;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.author-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Section */
