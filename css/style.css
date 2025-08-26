@@ -287,8 +287,13 @@ a:hover {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
     list-style: none;
+}
+
+.nav-list li:last-child {
+    margin-left: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
 }
 
 .nav-link {
@@ -318,16 +323,32 @@ a:hover {
 }
 
 .lang-switch {
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin: 0 var(--spacing-md);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     font-size: var(--font-size-sm);
+    background-color: var(--background-light);
+    transition: all var(--transition-fast);
+}
+
+.lang-switch:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
+}
+
+/* تحسين التوازن بين رابط العربية وزر الحجز */
+@media (min-width: 1024px) {
+    .nav-list li:has(.lang-switch) {
+        margin-right: var(--spacing-md);
+    }
 }
 
 .nav-toggle {
@@ -346,6 +367,19 @@ a:hover {
     .nav-toggle {
         display: none;
     }
+}
+
+/* تحسين مظهر رابط تبديل اللغة */
+.nav-list .lang-switch {
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    min-width: -webkit-fill-available;
+    min-width: fit-content;
+}
+
+.nav-list .lang-switch::after {
+    display: none; /* إزالة الخط السفلي من رابط اللغة */
 }
 
 .bar {
